@@ -60,3 +60,9 @@ UNet is a specially designed architecture of CNN for image segmentation in diffe
 As you can see in figure upper, algorithm takes a grayscale image with 640x640x1 as input and gives 640x640x9 as output image. Each layer in the output image is a retinal layer in the OCT image.
 
 <img src="/for_readme/layers_1by1.gif">
+
+IoU(Intersection over Union) - is a common evaluation metric for semantic image segmentation. Mean IoU of algorithm - 75.4%. As activation function I used ReLu, as validation metrics - simple accuracy of keras.models library. Final value of accuracy - 96.45%, loss - 0.1016 (decreased from 2.01).
+
+<img src="/for_readme/accuracy&loss.png">
+
+## Usage
