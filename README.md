@@ -1,6 +1,6 @@
 <!-- ![]( | width=100)
  -->
-<img src="/for_readme/OCT.png" width=500 height=200 >
+<img src="/for_readme/OCT.png" width=400 height=150 >
 
 # OCT - Retinal Layer Segmenter
 A deep learning algorithm for segmentation of retinal layers in Optical Coherence Tomography images.
