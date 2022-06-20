@@ -1,6 +1,6 @@
 <!-- ![]( | width=100)
  -->
-<img src="/for_readme/OCT.png" width=400 height=150 >
+<img src="/for_readme/OCT.png" width=400 height=130 >
 
 # OCT - Retinal Layer Segmenter
 A deep learning algorithm for segmentation of retinal layers in Optical Coherence Tomography images.
@@ -11,8 +11,8 @@ A deep learning algorithm for segmentation of retinal layers in Optical Coherenc
 * [Dataset](#dataset)
 * [Technologies](#technologies)
 * [Architecture](#architecture)
-<!-- * [Setup](#setup)
- -->
+* [Usage](#usage)
+
 ## General info
 This is the deep learning based approach to segement retina layers on Optical Coherence Tomogrpahy images. The main aim of project is to automate segmentation process of layers by using neural networks. 
 
@@ -66,3 +66,21 @@ IoU(Intersection over Union) - is a common evaluation metric for semantic image 
 <img src="/for_readme/accuracy&loss.png">
 
 ## Usage
+>json_mask_reading.ipynb
+
+This is jupyter-notebook for converting JSON files with coordinates to segmented masks of original OCT images. For segmenting I used [makesense.ai](<https://www.makesense.ai/>) tool. As result it gives to VGG JSON.
+* *json_file* - local path to VGG JSON file
+* *original_images* - local path to original OCT images
+* *result_save* - local path to store result images -segmented masks
+
+>simple_unet.py
+
+It is python file that contain UNet architecture model as class. This class we will use in the main segmentation file. *Nothing needs to be changed* 
+
+>multiclass_segmentation.ipynb
+
+It is jupyter-notebook file that contain main part of segmentation algorithm. Variables that should be changed:
+* *TRAIN_PATH_X* - local path to original OCT images (X-label)
+* *TRAIN_PATH_Y* - local path to segmeted OCT imaes, maskes (Y-label)
+* *SIZE_X* - width of image (optional, default 640 pixels)
+* *SIZE_Y* - height of image (optional, default 640 pixels)
