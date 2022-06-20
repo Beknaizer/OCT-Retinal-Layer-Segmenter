@@ -68,18 +68,18 @@ IoU(Intersection over Union) - is a common evaluation metric for semantic image 
 ## Usage
 >json_mask_reading.ipynb
 
-This is jupyter-notebook for converting JSON files with coordinates to segmented masks of original OCT images. For segmenting I used [makesense.ai](<https://www.makesense.ai/>) tool. As result it gives to VGG JSON.
+This is jupyter-notebook for converting JSON files with coordinates to segmented masks of original OCT images. For segmenting I used [makesense.ai](<https://www.makesense.ai/>) tool. As result it gives to VGG JSON. </br>:hammer_and_wrench: Variables that should be changed:
 * *json_file* - local path to VGG JSON file
 * *original_images* - local path to original OCT images
 * *result_save* - local path to store result images -segmented masks
 
 >simple_unet.py
 
-It is python file that contain UNet architecture model as class. This class we will use in the main segmentation file. *Nothing needs to be changed* 
+It is python file that contain UNet architecture model as class. This class we will use in the main segmentation file. </br>:heavy_check_mark: *Nothing needs to be changed* 
 
 >multiclass_segmentation.ipynb
 
-It is jupyter-notebook file that contain main part of segmentation algorithm. Variables that should be changed:
+It is jupyter-notebook file that contain main part of segmentation algorithm.</br> :hammer_and_wrench: Variables that should be changed:
 * *TRAIN_PATH_X* - local path to original OCT images (X-label)
 * *TRAIN_PATH_Y* - local path to segmeted OCT imaes, maskes (Y-label)
 * *SIZE_X* - width of image (optional, default 640 pixels)
