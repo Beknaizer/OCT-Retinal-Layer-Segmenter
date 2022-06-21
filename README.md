@@ -3,7 +3,7 @@
 <img src="/for_readme/OCT.png" width=400 height=130 >
 
 # OCT - Retinal Layer Segmenter
-A deep learning algorithm for segmentation of retinal layers in Optical Coherence Tomography images.
+A deep learning algorithm for multiclass semantic segmentation of retinal layers in Optical Coherence Tomography images.
 
 ## Table of contents
 * [General info](#general-info)
