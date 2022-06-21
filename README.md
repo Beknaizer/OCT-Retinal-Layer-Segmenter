@@ -12,6 +12,7 @@ A deep learning algorithm for segmentation of retinal layers in Optical Coherenc
 * [Technologies](#technologies)
 * [Architecture](#architecture)
 * [Usage](#usage)
+* [Checkpoints](#checkpoints)
 
 ## General info
 This is the deep learning based approach to segement retina layers on Optical Coherence Tomogrpahy images. The main aim of project is to automate segmentation process of layers by using neural networks. 
@@ -72,6 +73,7 @@ This is jupyter-notebook for converting JSON files with coordinates to segmented
 * *json_file* - local path to VGG JSON file
 * *original_images* - local path to original OCT images
 * *result_save* - local path to store result images -segmented masks
+* *class_dict* - your label names in VGG JSON (segmentation classes)
 
 >simple_unet.py
 
@@ -82,5 +84,9 @@ It is python file that contain UNet architecture model as class. This class we w
 It is jupyter-notebook file that contain main part of segmentation algorithm.</br> :hammer_and_wrench: Variables that should be changed:
 * *TRAIN_PATH_X* - local path to original OCT images (X-label)
 * *TRAIN_PATH_Y* - local path to segmeted OCT imaes, maskes (Y-label)
+* *n_classe* - number of classes for segmentation
 * *SIZE_X* - width of image (optional, default 640 pixels)
 * *SIZE_Y* - height of image (optional, default 640 pixels)
+
+## Checkpoints
+ [Here](https://drive.google.com/drive/folders/1zKkv0BsFAHi2BV7oUBiD8FRK_HDMaViE?usp=sharing) you can download already trainded weights for OCTID dataset.
