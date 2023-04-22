@@ -25,6 +25,8 @@ This is the deep learning based approach to segement retina layers on Optical Co
 University of Waterloo, 2018 year. There is a fovea-centered OCT image of 25
 healthy patients. Size 750 x 500 pixels, grayscale images. Images in dataset I used as 'X' label, but for 'Y' (ground truth) i segmented it manually by using [makesense.ai](<https://www.makesense.ai/>) tool.
 
+Annotated by myself, [small example of dataset](< https://drive.google.com/file/d/1mZRxoPUn6eKbYrPi8jXua-nGhEftd1qa/view?usp=share_link/>) 
+
 ## Retinal layers
   Segmentation of retinal layers on OCT images is important. Because it gives the ability to identify eye disease by observing images. Identifying eye disease in the next way: it depends on the height of each layer in the image. And the correct way of its segmentation greatly facilitates the visual prediction of the diagnosis. Nowadays problem is that more than 300M people in the world have diseases related to diabetic macular edema, age related macular degeneration, diabetic retinopathy and so on. Studies show that retinal structure changes are triggered before the vision field problems occur. Therefore the segmentation of retina layers on OCT image is important in timely treatment of diseases, and deep learning algorithms can make it much faster and in most cases more accurate than humans of course, if you write and train your algorithm in the right way. 
 
