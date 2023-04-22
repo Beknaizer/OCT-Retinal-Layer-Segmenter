@@ -13,6 +13,7 @@ A deep learning algorithm for multiclass semantic segmentation of retinal layers
 * [Architecture](#architecture)
 * [Usage](#usage)
 * [Checkpoints](#checkpoints)
+* [References](#references)
 
 ## General info
 This is the deep learning based approach to segement retina layers on Optical Coherence Tomogrpahy images. The main aim of project is to automate segmentation process of layers by using neural networks. 
@@ -92,3 +93,6 @@ It is jupyter-notebook file that contain main part of segmentation algorithm.</b
 
 ## Checkpoints
  [Here](https://drive.google.com/drive/folders/1zKkv0BsFAHi2BV7oUBiD8FRK_HDMaViE?usp=sharing) you can download already trainded weights for OCTID dataset.
+ 
+## References
+I want to express gratitude to Dr. Sreenivas Bhattiprolu ([youtube](https://www.youtube.com/@DigitalSreeni), [github](https://github.com/bnsreenu)), for inspiring and helping me to make this. Some part of codes and intuition that i used in this project i took from him. You can view the playlist of this author's lessons with the code attached.
